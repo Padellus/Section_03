@@ -1,8 +1,9 @@
 // Copyright Phillip Patti 2018.
 
+#include "Grabber.h"
+
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
-#include "Grabber.h"
 
 #define OUT
 
@@ -23,7 +24,7 @@ void UGrabber::BeginPlay()
 	Super::BeginPlay();
 
 	UE_LOG(LogTemp, Warning, TEXT("Grabber reporting for duty!"));
-	
+
 }
 
 
