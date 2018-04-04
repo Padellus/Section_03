@@ -68,6 +68,9 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	);
 
 	// See what we hit
-	UE_LOG(LogTemp, Warning, TEXT("Grabber hit %s"), *Hit.GetActor()->GetName());
+	AActor* ActorHit = Hit.GetActor();
+	if (ActorHit) {
+		UE_LOG(LogTemp, Warning, TEXT("Grabber raytrace hit %s"), *(ActorHit->GetName()));
+	}
 }
 
